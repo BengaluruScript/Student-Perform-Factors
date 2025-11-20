@@ -1,7 +1,7 @@
 # Brown University Student Academic Dataset Collection
 
 ## 1. Dataset Overview
-This repository contains 6 interrelated datasets focusing on Brown University students' academic performance, learning behaviors, and course context information. Some dimensions of the data are built based on Brown University's public academic datasets, while unpublished data dimensions are supplemented by legally collected offline data and generated using reasonable regression analysis. The datasets support research on personalized education strategies, learning engagement analysis, and academic outcome prediction, while strictly adhering to privacy regulations and ethical guidelines.
+This repository contains 6 interrelated datasets focusing on Brown University students' academic performance, learning behaviors, and course context information. Some dimensions of the data are built based on Brown University's public academic datasets (Access link: https://oir.brown.edu/institutional-data/common-data-set), while unpublished data dimensions are supplemented by legally collected offline data and generated using reasonable regression analysis. The datasets support research on personalized education strategies, learning engagement analysis, and academic outcome prediction, while strictly adhering to privacy regulations and ethical guidelines.
 
 All datasets are structured for compatibility with common data analysis tools (Python Pandas, R, SQL) and use clear column naming conventions for easy integration.
 
@@ -11,7 +11,7 @@ All datasets are structured for compatibility with common data analysis tools (P
 The collection, supplementation, and processing of all datasets comply with FERPA (Family Educational Rights and Privacy Act), Brown University's data governance policies, and academic research ethical standards. The source and compliance details of each dataset are as follows:
 
 ### 2.1 raw_static.csv
-- **Data Source**: Core data is derived from Brown University's public academic datasets (Access link: https://data.brown.edu/collections/academic); unpublished detailed grade dimensions are collected legally offline, and supplementary data is generated using linear regression models to ensure consistency with the distribution of public data.
+- **Data Source**: Core data is derived from Brown University's public academic datasets; unpublished detailed grade dimensions are collected legally offline, and supplementary data is generated using linear regression models to ensure consistency with the distribution of public data.
 - **Compliance & Consent Requirements**: Public data follows Brown University's public data usage specifications; offline collected data is obtained with students' explicit and voluntary consent; all data is anonymized to remove Personally Identifiable Information (PII).
 
 ### 2.2 enrollment.csv
@@ -27,7 +27,7 @@ The collection, supplementation, and processing of all datasets comply with FERP
 - **Compliance & Consent Requirements**: Generated through statistical modeling (including integration of regression analysis results), contains no direct PII, and complies with the university's academic research ethical guidelines and public data usage specifications.
 
 ### 2.5 courses.csv
-- **Data Source**: Core course information (course code, name, credit hours) is from Brown University's public registrar system; partial historical course details (e.g., association with instructors of early courses) are collected legally offline and supplemented with polynomial regression.
+- **Data Source**: Core course information (course code, name, credit hours) is from Brown University's public registrar system and public academic datasets; partial historical course details (e.g., association with instructors of early courses) are collected legally offline and supplemented with polynomial regression.
 - **Compliance & Consent Requirements**: Only contains publicly available or legally collected course background information (no student personal data); supplementary data is verified with registrar system information to ensure accuracy.
 
 ### 2.6 behavior_text.csv
@@ -90,7 +90,7 @@ The collection, supplementation, and processing of all datasets comply with FERP
   - `credit_hours`: Number of academic credits (e.g., 4)
   - `instructor_id`: Anonymized identifier for the course instructor (including regression-supplemented historical instructor information)
 - **Data Type**: Structured categorical/numerical data
-- **Source**: Public information from Brown University's registrar system and legally supplemented data
+- **Source**: Public information from Brown University's registrar system, public academic datasets, and legally supplemented data
 
 ### 3.6 behavior_text.csv – Anonymized Educational Text Data
 - **Purpose**: Contains text data reflecting students' learning engagement (e.g., discussion contributions, reflective essays).
@@ -120,7 +120,7 @@ The collection, supplementation, and processing of all datasets comply with FERP
 
 ### 4.3 Citation Requirement
 If using these datasets in research publications, please cite:
-> "Brown University Student Academic Dataset Collection. Brown University Learning Analytics Lab, 2025. Built based on Brown University's public academic datasets (https://data.brown.edu/collections/academic), legally collected offline data, and reasonably supplemented with regression analysis. Compliant with FERPA and IRB Guidelines."
+> "Brown University Student Academic Dataset Collection. Brown University Learning Analytics Lab, 2025. Built based on Brown University's public academic datasets (https://oir.brown.edu/institutional-data/common-data-set), legally collected offline data, and reasonably supplemented with regression analysis. Compliant with FERPA and IRB Guidelines."
 
 ---
 
